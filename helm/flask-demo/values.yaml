@@ -1,0 +1,14 @@
+web:
+  replicas: 2
+
+imageDetails:
+  envprefix: dev
+  imagename: flask-demo-app
+  tag: [tag]
+
+imageCredentials:
+  registry: ghcr.io
+  username: [username]
+  password: [gittoken]
+  email: [email]
+
