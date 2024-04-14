@@ -4,7 +4,7 @@ web:
 imageDetails:
   envprefix: dev
   imagename: flask-demo-app
-  tag: 0.0.12
+  tag: 0.0.10
 
 imageCredentials:
   registry: ghcr.io
