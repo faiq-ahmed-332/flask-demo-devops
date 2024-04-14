@@ -14,11 +14,8 @@ spec:
         app: python-demo-app
         role: web
     spec:
-      imagePullSecrets:
-      - name: regcred
       containers:
         - name: {{ .Release.Name }}-web
-          image: ghcr.io/faiq-ahmed-332/dev-flask-demo-app:0.0.1
           image: "{{ .Values.imageCredentials.registry }}/{{ .Values.imageCredentials.username }}/{{ .Values.imageDetails.envprefix }}-{{ .Values.imageDetails.imagename }}:{{ .Values.imageDetails.tag }}"
           ports:
             - name: flask

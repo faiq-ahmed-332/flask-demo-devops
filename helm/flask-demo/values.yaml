@@ -4,11 +4,11 @@ web:
 imageDetails:
   envprefix: dev
   imagename: flask-demo-app
-  tag: [tag]
+  tag: 0.0.11
 
 imageCredentials:
   registry: ghcr.io
-  username: [username]
+  username: faiq-ahmed-332
   password: [gittoken]
   email: [email]
 
