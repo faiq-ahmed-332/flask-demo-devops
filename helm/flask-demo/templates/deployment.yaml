@@ -14,6 +14,8 @@ spec:
         app: python-demo-app
         role: web
     spec:
+      imagePullSecrets:
+      - name: regcred
       containers:
         - name: {{ .Release.Name }}-web
           image: "{{ .Values.imageCredentials.registry }}/{{ .Values.imageCredentials.username }}/{{ .Values.imageDetails.envprefix }}-{{ .Values.imageDetails.imagename }}:{{ .Values.imageDetails.tag }}"
